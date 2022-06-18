@@ -1,0 +1,12 @@
+{% extends "tera/base" %}
+
+{% block content %}
+    <h1>Hi {{ name }}!</h1>
+    <h3>Here are your TODO items:</h3>
+    <ul>
+        {% for s in todos %}
+            <li>{{ s.note}}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}
